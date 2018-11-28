@@ -5,7 +5,7 @@ import Navigation from '../Navigation';
 import HomePage from '../Home';
 import AboutPage from '../About';
 import ContactPage from '../Contact';
-import ProductListPage from '../ProductList';
+import ProductListPage from '../ProductListPage';
 import Footer from '../Footer';
 
 import * as ROUTES from '../../constants/routes';
