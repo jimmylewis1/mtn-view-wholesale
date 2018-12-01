@@ -1,4 +1,5 @@
 const productsList = [{
+  "id": "001",
   "title": "Case IH 7140",
   "price": "12,000",
   "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
@@ -24,9 +25,10 @@ const productsList = [{
   ]
 },
 {
-  "title": "Case IH 7140",
+  "id": "002",
+  "title": "Item #2",
   "price": "12,000",
-  "description": "This is a test description",
+  "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
   "images": [
     "products/caseih7140/image00.jpg",
     "products/caseih7140/image01.jpg",
@@ -49,9 +51,10 @@ const productsList = [{
   ]
 },
 {
-  "title": "Case IH 7140",
+  "id": "003",
+  "title": "Item #3",
   "price": "12,000",
-  "description": "This is a test description",
+  "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
   "images": [
     "products/caseih7140/image00.jpg",
     "products/caseih7140/image01.jpg",
@@ -74,9 +77,10 @@ const productsList = [{
   ]
 },
 {
-  "title": "Case IH 7140",
+  "id": "004",
+  "title": "Item #4",
   "price": "12,000",
-  "description": "This is a test description",
+  "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
   "images": [
     "products/caseih7140/image00.jpg",
     "products/caseih7140/image01.jpg",

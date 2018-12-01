@@ -5,7 +5,6 @@ import { homeHero, nameSloganWrapper,
   companyName, companySlogan, middleWrapper, 
   middleTextWrapper, middleText, browseButton,
   bottomWrapper } from './home.styles';
-import * as ROUTES from '../../constants/routes';
 
 import middleImage from '../../images/temp-image2.jpg';
 import bottomImage1 from '../../images/temp-image3.jpg';
@@ -34,7 +33,7 @@ const HomePage = () => (
           Text goes here.Text goes here.Text goes here.Text goes here.
           Text goes here.Text goes here.Text goes here.Text goes here.
         </div>
-        <Link to={ROUTES.PRODUCT_LIST}>
+        <Link to={{ pathname: '/product-list'}}>
           <div className={browseButton}>Browse Our Listings</div>
         </Link>
       </div>

@@ -6,19 +6,19 @@ import HomePage from '../Home';
 import AboutPage from '../About';
 import ContactPage from '../Contact';
 import ProductListPage from '../ProductListPage';
+import ProductPage from '../ProductPage';
 import Footer from '../Footer';
-
-import * as ROUTES from '../../constants/routes';
 
 const App = () => (
   <Router>
       <div>
         <Navigation />
 
-        <Route exact path={ROUTES.HOME} component={HomePage} />
-        <Route exact path={ROUTES.ABOUT} component={AboutPage} />
-        <Route exact path={ROUTES.PRODUCT_LIST} component={ProductListPage} />
-        <Route exact path={ROUTES.CONTACT} component={ContactPage} />
+        <Route exact path={'/'} component={HomePage} />
+        <Route exact path={'/about'} component={AboutPage} />
+        <Route exact path={'/product-list'} component={ProductListPage} />
+        <Route exact path={'/contact'} component={ContactPage} />
+        <Route exact path= {'/product/:id'} component={ProductPage} />
         
         <Footer />
 

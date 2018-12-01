@@ -6,12 +6,13 @@ export const productWrapper = css `
   flex-direction: column;
   align-items: center;
   max-width: 33%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   label: product-wrapper;
 `;
 
 export const productListImage = css ` 
   width: 75%;
+  cursor: pointer;
   label: product-list-image;
 `;
 
@@ -25,6 +26,7 @@ export const productInfo = css `
 
   h1 {
     margin: 0;
+    cursor: pointer;
   }
 
   h4 {
