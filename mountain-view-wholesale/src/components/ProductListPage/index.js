@@ -4,7 +4,7 @@ import SearchApp from '../Search';
 
 import ProductList from '../ProductList';
 import { productListWrapper } from './productListPage.styles';
-import { pageTitle, searchBar } from '../../styles/generic.styles';
+import { pageTitle } from '../../styles/generic.styles';
 
 const ProductListPage = () => (
   <div>

@@ -6,7 +6,7 @@ export const productWrapper = css `
 `;
 
 export const backWrapper = css `
-  
+  margin-bottom: 3em;
   label: back-wrapper;
 `;
 
@@ -28,7 +28,7 @@ export const arrowSvg = css `
 `;
 
 export const imageCarouselWrapper = css `
-
+  margin-right: 10%;
   label: image-carousel-wrapper;
 `;
 
@@ -40,6 +40,29 @@ export const productImage = css `
 export const productInfoWrapper = css `
   display: flex;
   flex-direction: column;
+  max-width: 50%;
   label: product-info-wrapper;
+`;
+
+export const productTitle = css `
+  font-size: 3em;
+  font-weight: bold;
+  label: product-title;
+`;
+
+export const productPrice = css `
+  font-size: 3em;
+  font-weight: bold;
+  label: product-price;
+`;
+
+export const productDesc = css `
+  margin-top: 2%;
+  label: product-desc;
+`;
+
+export const backText = css `
+
+  label: back-text;
 `;
 

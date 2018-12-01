@@ -57,20 +57,6 @@ export const middleText = css `
   label: middle-text;
 `;
 
-export const browseButton = css `
-  height: 50px;
-  width: 300px;
-  color: ${white};
-  background-color: ${blue};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  margin-top: 25px;
-  cursor: pointer
-  label: browse-button;
-`;
-
 export const bottomWrapper = css `
   display: flex;
   justify-content: space-between;

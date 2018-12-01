@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 import { homeHero, nameSloganWrapper, 
   companyName, companySlogan, middleWrapper, 
-  middleTextWrapper, middleText, browseButton,
+  middleTextWrapper, middleText,
   bottomWrapper } from './home.styles';
+import { actionButton } from '../../styles/generic.styles';
 
 import middleImage from '../../images/temp-image2.jpg';
 import bottomImage1 from '../../images/temp-image3.jpg';
@@ -34,7 +35,7 @@ const HomePage = () => (
           Text goes here.Text goes here.Text goes here.Text goes here.
         </div>
         <Link to={{ pathname: '/product-list'}}>
-          <div className={browseButton}>Browse Our Listings</div>
+          <div className={actionButton}>Browse Our Listings</div>
         </Link>
       </div>
     </div>

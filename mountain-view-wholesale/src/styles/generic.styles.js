@@ -1,5 +1,5 @@
 import { css } from 'emotion';
-import { lightGrey } from '../styles/colors';
+import { lightGrey, white, blue } from '../styles/colors';
 
 export const textBold = css  `
   font-weight: bold;
@@ -25,4 +25,24 @@ export const searchBar = css `
   ::-webkit-input-placeholder {
     padding-left: 3px;
   }
+`;
+
+export const wrapper = css `
+  margin: 3em 5em;
+  label: wrapper;
+`;
+
+export const actionButton = css `
+  font-size: 18px;
+  height: 50px;
+  width: 300px;
+  color: ${white};
+  background-color: ${blue};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  margin-top: 25px;
+  cursor: pointer
+  label: browse-button;
 `;
