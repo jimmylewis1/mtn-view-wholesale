@@ -20,7 +20,7 @@ a {
 
 export const arrowSvg = css `
   position: relative;
-  top: 1px;
+  top: 2px;
   // path {
   //   fill: red;
   // }
@@ -51,7 +51,7 @@ export const productTitle = css `
 `;
 
 export const productPrice = css `
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   label: product-price;
 `;
@@ -62,7 +62,8 @@ export const productDesc = css `
 `;
 
 export const backText = css `
-
+  font-size: 18px;
+  padding-left: 1em;
   label: back-text;
 `;
 

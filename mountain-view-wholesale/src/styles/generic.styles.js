@@ -36,6 +36,7 @@ export const actionButton = css `
   font-size: 18px;
   height: 50px;
   width: 300px;
+  border: none;
   color: ${white};
   background-color: ${blue};
   display: flex;
@@ -43,6 +44,10 @@ export const actionButton = css `
   align-items: center;
   border-radius: 6px;
   margin-top: 25px;
-  cursor: pointer
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
   label: browse-button;
 `;

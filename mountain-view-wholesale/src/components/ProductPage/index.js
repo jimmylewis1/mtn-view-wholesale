@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import arrowImg from '../../images/arrow.svg';
+import ModalComponent from '../Modal';
 
 import { productWrapper, backWrapper, backBtn, 
   arrowSvg, imageCarouselWrapper, productInfoWrapper,
@@ -32,6 +33,7 @@ const ProductPage = (props) => {
           </Link>
         </div>
       </div>
+      {/* TODO: Bootstap productWrapper to optimize for mobile. */}
       <div className={productWrapper}>
         <div className={imageCarouselWrapper}>
           <Carousel>
@@ -60,7 +62,7 @@ const ProductPage = (props) => {
           <div className={productTitle}>{productData.title}</div>
           <div className={productPrice}>${productData.price}</div>
           <div className={productDesc}>{productData.description}</div>
-          <div className={actionButton}>Learn More</div>
+          <ModalComponent />
         </div>
       </div>
     </div>
