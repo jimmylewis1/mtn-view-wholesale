@@ -38,23 +38,23 @@ const ProductPage = (props) => {
         <div className={imageCarouselWrapper}>
           <Carousel>
             <div>
-              {/* Get the image path right, and this will work */}
-              <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" alt= "" />
+              {/* Images need to be the same height and width. */}
+              <img src={`../${product.images[0]}`} alt= "" />
             </div>
             <div>
-              <img src={`${product.images[1]}`} alt= "" />
+              <img src={`../${product.images[1]}`} alt= "" />
             </div>
             <div>
-              <img src={`${product.images[2]}`} alt= "" />
+              <img src={`../${product.images[2]}`} alt= "" />
             </div>
             <div>
-              <img src={`${product.images[3]}`} alt= "" />
+              <img src={`../${product.images[3]}`} alt= "" />
             </div>
             <div>
-              <img src={`${product.images[4]}`} alt= "" />
+              <img src={`../${product.images[4]}`} alt= "" />
             </div>
             <div>
-              <img src={`${product.images[5]}`} alt= "" />
+              <img src={`../${product.images[5]}`} alt= "" />
             </div>
           </Carousel>
         </div>
