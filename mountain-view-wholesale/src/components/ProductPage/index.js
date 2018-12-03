@@ -11,17 +11,14 @@ import ModalComponent from '../Modal';
 import { productWrapper, backWrapper, backBtn, 
   arrowSvg, imageCarouselWrapper, productInfoWrapper,
   productTitle, productPrice, productDesc, backText } from './productPage.styles';
-import { wrapper, actionButton } from '../../styles/generic.styles';
+import { wrapper } from '../../styles/generic.styles';
 
 import productsList from '../../productsList';
 
 const ProductPage = (props) => {
   const productId = props.match.params.id;
-  // lodash to find object with id
   const productData = _.find(productsList, { 'id': productId});
   const product = productData;
-
-  console.log('product: ', product);
 
   return(
     <div className={wrapper}>
@@ -35,29 +32,29 @@ const ProductPage = (props) => {
       </div>
       {/* TODO: Bootstap productWrapper to optimize for mobile. */}
       <div className={productWrapper}>
-        <div className={imageCarouselWrapper}>
-          <Carousel>
-            <div>
-              {/* Images need to be the same height and width. */}
-              <img src={`../${product.images[0]}`} alt= "" />
-            </div>
-            <div>
-              <img src={`../${product.images[1]}`} alt= "" />
-            </div>
-            <div>
-              <img src={`../${product.images[2]}`} alt= "" />
-            </div>
-            <div>
-              <img src={`../${product.images[3]}`} alt= "" />
-            </div>
-            <div>
-              <img src={`../${product.images[4]}`} alt= "" />
-            </div>
-            <div>
-              <img src={`../${product.images[5]}`} alt= "" />
-            </div>
-          </Carousel>
-        </div>
+      <div className={imageCarouselWrapper}>
+        <Carousel>
+          <div>
+            {/* Images need to be the same height and width. */}
+            <img src={`../${product.images[0]}`} alt= "" />
+          </div>
+          <div>
+            <img src={`../${product.images[1]}`} alt= "" />
+          </div>
+          <div>
+            <img src={`../${product.images[2]}`} alt= "" />
+          </div>
+          <div>
+            <img src={`../${product.images[3]}`} alt= "" />
+          </div>
+          <div>
+            <img src={`../${product.images[4]}`} alt= "" />
+          </div>
+          <div>
+            <img src={`../${product.images[5]}`} alt= "" />
+          </div>
+        </Carousel>
+      </div>
         <div className={productInfoWrapper}>
           <div className={productTitle}>{productData.title}</div>
           <div className={productPrice}>${productData.price}</div>

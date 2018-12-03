@@ -5,7 +5,6 @@ import productsList from '../../productsList';
 
 const product = productsList;
 const KEYS_TO_FILTERS = ['product.title'];
-console.log('product: ', product);
 
 class SearchApp extends Component {
   constructor (props) {

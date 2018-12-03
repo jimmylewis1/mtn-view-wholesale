@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 
 import { modalContentWrapper, closeModalBtn, modalTopWrapper,
-  modalInstruction, modalPhoneInfo, modalH2 } from './modal.styles';
+  modalInstruction, modalPhoneInfo, modalH2, modalWrapper } from './modal.styles';
 import { actionButton } from '../../styles/generic.styles';
  
 const customStyles = {
@@ -45,7 +45,7 @@ class ModalComponent extends React.Component {
  
   render() {
     return (
-      <div>
+      <div className={modalWrapper}>
         <button className={actionButton} onClick={this.openModal}>Learn More</button>
         <Modal
           isOpen={this.state.modalIsOpen}

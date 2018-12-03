@@ -4,14 +4,14 @@ export const productWrapper = css `
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   max-width: 33%;
   margin-bottom: 3%;
+  padding: 1%;
   label: product-wrapper;
 `;
 
 export const productListImage = css ` 
-  width: 75%;
+  width: 100%;
   cursor: pointer;
   label: product-list-image;
 `;

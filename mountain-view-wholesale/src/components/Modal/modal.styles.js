@@ -35,3 +35,9 @@ export const modalPhoneInfo = css `
   font-size: 22px;
   label: modal-phone-info;
 `;
+
+export const modalWrapper = css `
+  display: flex;
+  justify-content: center;
+  label: modal-wrapper;
+`;

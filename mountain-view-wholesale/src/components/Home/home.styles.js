@@ -1,5 +1,5 @@
 import { css } from 'emotion';
-import { white, blue } from '../../styles/colors';
+import { white } from '../../styles/colors';
 
 import TractorHero from '../../images/tractor-hero.jpg';
 

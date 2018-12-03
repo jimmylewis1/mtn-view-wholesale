@@ -2,6 +2,9 @@ import { css } from 'emotion';
 
 export const productWrapper = css `
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   label: product-wrapper;
 `;
 
@@ -28,7 +31,13 @@ export const arrowSvg = css `
 `;
 
 export const imageCarouselWrapper = css `
-  margin-right: 10%;
+
+  div {
+    display: flex;
+    flex-direction:
+    justify-content: center;
+    align-items: center;
+  }
   label: image-carousel-wrapper;
 `;
 
