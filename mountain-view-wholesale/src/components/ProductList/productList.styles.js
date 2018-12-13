@@ -1,22 +1,20 @@
 import { css } from 'emotion';
 
-export const productWrapper = css `
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 33%;
-  margin-bottom: 3%;
-  padding: 1%;
+export const productWrapper = css`
+  max-width: 450px;
+  margin: 15px;
   label: product-wrapper;
 `;
 
-export const productListImage = css ` 
-  width: 100%;
+export const productListImage = css` 
+  width: 450px;
+  max-width: 100%;
+  max-height: 450px;
   cursor: pointer;
   label: product-list-image;
 `;
 
-export const productInfo = css `
+export const productInfo = css`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,7 +33,7 @@ export const productInfo = css `
 
 `;
 
-export const productDescription = css `
+export const productDescription = css`
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

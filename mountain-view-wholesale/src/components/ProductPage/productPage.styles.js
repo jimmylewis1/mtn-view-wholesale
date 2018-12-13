@@ -34,7 +34,7 @@ export const imageCarouselWrapper = css `
 
   div {
     display: flex;
-    flex-direction:
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
