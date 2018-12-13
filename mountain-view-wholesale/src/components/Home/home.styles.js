@@ -3,7 +3,7 @@ import { white } from '../../styles/colors';
 
 import TractorHero from '../../images/tractor-hero.jpg';
 
-export const homeHero = css `
+export const homeHero = css`
   background-image: url('${TractorHero}');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -13,7 +13,7 @@ export const homeHero = css `
   label: home-hero;
 `;
 
-export const nameSloganWrapper = css `
+export const nameSloganWrapper = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@ export const nameSloganWrapper = css `
   label: name-slogan-wrapper;
 `;
 
-export const companyName = css `
+export const companyName = css`
   color: ${white};
   font-size: 8em;
   font-weight: bold;
@@ -31,33 +31,35 @@ export const companyName = css `
   label: company-name;
 `;
 
-export const companySlogan = css `
+export const companySlogan = css`
   color: ${white};
   font-size: 2em;
   font-style: italic;
   label: company-slogan;
 `;
 
-export const middleWrapper = css `
+export const middleWrapper = css`
   display: flex;
+  flex-wrap: wrap;
   margin: 5em;
   label: middle-wrapper;
 `;
 
-export const middleTextWrapper = css `
+export const middleTextWrapper = css`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3em;
+  max-width: 690px;
   label: middle-text-wrapper;
 `;
 
-export const middleText = css `
+export const middleText = css`
 
   label: middle-text;
 `;
 
-export const bottomWrapper = css `
+export const bottomWrapper = css`
   display: flex;
   justify-content: space-between;
   margin: 5em;
