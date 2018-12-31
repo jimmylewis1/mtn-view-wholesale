@@ -1,22 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, NavItem, } from 'react-bootstrap';
 
-import { navLinks, header, logoWrapper, logoImage } from './navigation.styles';
+import { navBar, navItem, logoImage } from './navigation.styles';
 import TempLogo from '../../images/tempLogo.png';
 
 const Navigation = () =>
-  <div className={header}>
-    <div className={logoWrapper}>
-      <Link to={{ pathname: '/' }}>
-        <img className={logoImage} src={TempLogo} alt="" />
-      </Link>
-    </div>
-    <ul className={navLinks}>
-      <li><Link to={{ pathname: '/' }}>Home</Link></li>
-      <li><Link to={{ pathname: '/about' }}>About</Link></li>
-      <li><Link to={{ pathname: '/product-list' }}>Products</Link></li>
-      <li><Link to={{ pathname: '/contact' }}>Contact</Link></li>
-    </ul>
-  </div>
+  <Navbar collapseOnSelect className={navBar}>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <Link to={{ pathname: '/' }}>
+          <img className={logoImage} src={TempLogo} alt="" />
+        </Link>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Navbar.Text>
+        <i>The better way to buy!</i>
+      </Navbar.Text>
+      <Nav pullRight>
+        <NavItem className={navItem} eventKey={1} href="/">
+          Home
+      </NavItem>
+        <NavItem className={navItem} eventKey={2} href="/about">
+          About
+      </NavItem>
+        <NavItem className={navItem} eventKey={1} href="/product-list">
+          Products
+      </NavItem>
+        <NavItem className={navItem} eventKey={2} href="/contact">
+          Contact
+      </NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 
 export default Navigation;

@@ -104,7 +104,7 @@ const productsList = [{
 },
 {
   "id": "004",
-  "title": "Item #4",
+  "title": "Item #5",
   "price": "12,000",
   "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
   "images": [
@@ -130,7 +130,7 @@ const productsList = [{
 },
 {
   "id": "004",
-  "title": "Item #4",
+  "title": "Item #6",
   "price": "12,000",
   "description": "This is a test description that is a little bit longer to make sure formatting is looking nice and pretty and pretty and that the ... works at the end. I think three lines in total is probably more than plenty, don't you?",
   "images": [

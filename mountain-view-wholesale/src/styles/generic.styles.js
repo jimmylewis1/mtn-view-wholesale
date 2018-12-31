@@ -1,19 +1,19 @@
 import { css } from 'emotion';
 import { lightGrey, white, blue } from '../styles/colors';
 
-export const textBold = css  `
+export const textBold = css`
   font-weight: bold;
   label: text-bold;
 `;
 
-export const pageTitle = css `
-  margin: 3em 0 0 5em;
+export const pageTitle = css`
+  margin: 3em 5em 0 5em;
   display: flex;
   justify-content: space-between;
   label: page-title;
 `;
 
-export const searchBar = css `
+export const searchBar = css`
   height: 2em;
   width: 20em;
   margin: 2em 8em 0 0;
@@ -27,12 +27,12 @@ export const searchBar = css `
   }
 `;
 
-export const wrapper = css `
+export const wrapper = css`
   margin: 3em 5em;
   label: wrapper;
 `;
 
-export const actionButton = css `
+export const actionButton = css`
   font-size: 18px;
   height: 50px;
   width: 300px;

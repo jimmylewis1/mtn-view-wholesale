@@ -1,13 +1,11 @@
-import  React, {Component} from 'react';
-import SearchInput, {createFilter} from 'react-search-input'
+import React, { Component } from 'react';
 
 import productsList from '../../productsList';
 
 const product = productsList;
-const KEYS_TO_FILTERS = ['product.title'];
 
 class SearchApp extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       searchTerm: ''
@@ -15,15 +13,16 @@ class SearchApp extends Component {
     this.searchUpdated = () => this.searchUpdated.bind(this)
   }
 
-  render () {
-    const filteredProducts = product.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
+  searchUpdated(term) {
+    this.setState({ searchTerm: term })
+  }
+  render() {
     console.log('searching for: ', this.state.searchTerm);
     return (
       <div>
-        <SearchInput className="search-input" onChange={this.searchUpdated} />
-        {filteredProducts.map(product => {
+        {product.map(product => {
           return (
-            <div className="mail" key={product.title}></div>
+            <div className="product" key={product.title}></div>
           )
         })}
       </div>
