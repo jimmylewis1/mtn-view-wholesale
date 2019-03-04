@@ -9,20 +9,22 @@ import ProductListPage from '../ProductListPage';
 import ProductPage from '../ProductPage';
 import Footer from '../Footer';
 
+import { mainWrapper } from './app.styles';
+
 const App = () => (
   <Router>
-      <div>
-        <Navigation />
+    <div className={mainWrapper}>
+      <Navigation />
 
-        <Route exact path={'/'} component={HomePage} />
-        <Route exact path={'/about'} component={AboutPage} />
-        <Route exact path={'/product-list'} component={ProductListPage} />
-        <Route exact path={'/contact'} component={ContactPage} />
-        <Route exact path= {'/product/:id'} component={ProductPage} />
-        
-        <Footer />
+      <Route exact path={'/'} component={HomePage} />
+      <Route exact path={'/about'} component={AboutPage} />
+      <Route exact path={'/product-list'} component={ProductListPage} />
+      <Route exact path={'/contact'} component={ContactPage} />
+      <Route exact path={'/product/:id'} component={ProductPage} />
 
-      </div>
+      <Footer />
+
+    </div>
   </Router>
 );
 

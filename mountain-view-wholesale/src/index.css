@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* Primary Text Color */
   color: #4A4A4A;
-  font-size: 100%;
+  font-size: 14px;
 }
 
 a {
@@ -30,4 +30,25 @@ a:hover {
 .carousel .thumbs-wrapper {
   display: flex;
   justify-content: center;
+}
+
+/* Bootstrap Overrides */
+
+.navbar {
+  margin-bottom: 0;
+  min-height: 100px;
+}
+
+.navbar .container {
+  width: 100%;
+}
+
+.navbar-brand > img {
+  position: relative;
+  top: -42px;
+}
+
+.navbar-default 
+.navbar-nav > li > a {
+  font-size: 1em;
 }

@@ -3,22 +3,19 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, } from 'react-bootstrap';
 
 import { navBar, navItem, logoImage } from './navigation.styles';
-import TempLogo from '../../images/tempLogo.png';
+import Logo from '../../images/logo-white.png';
 
 const Navigation = () =>
   <Navbar collapseOnSelect className={navBar}>
     <Navbar.Header>
       <Navbar.Brand>
         <Link to={{ pathname: '/' }}>
-          <img className={logoImage} src={TempLogo} alt="" />
+          <img className={logoImage} src={Logo} width="300" height="150" alt="" />
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
-      <Navbar.Text>
-        <i>The better way to buy!</i>
-      </Navbar.Text>
       <Nav pullRight>
         <NavItem className={navItem} eventKey={1} href="/">
           Home

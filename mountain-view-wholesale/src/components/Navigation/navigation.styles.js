@@ -55,6 +55,6 @@ export const logoWrapper = css`
 `;
 
 export const logoImage = css`
-  width: 70%;
+  // width: 70%;
   label: logo-image;
 `;
