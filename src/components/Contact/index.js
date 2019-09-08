@@ -14,13 +14,13 @@ const ContactPage = () => (
       <img src={contactImage} alt="" />
       <div className={contactInfo}>
         <span className={textBold}>Mountain View Wholesale</span>
-        123 Street Name Here <br />
-        City, State, 80001 <br />
+        PO Box 415 <br />
+        Fairview, UT, 84629 <br />
         <br />
-        (888) 555-5555
+        (888) 380-6636
         <br />
         <br />
-        <a href="mailto:email@domain.com">email@domain.com</a>
+        <a href="mailto:email@domain.com">thor.grasteit@gmail.com</a>
       </div>
     </div>
   </div>

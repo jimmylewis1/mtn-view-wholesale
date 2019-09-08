@@ -22,7 +22,7 @@ const AboutPage = () => (
       <div className={ownerBio}>
         <h1>Thor Grasteit - Founder</h1>
         <div>
-          Thor grew up on a farm in Fallon, Nevada. He’s the oldest of ten children. Growing up, he learned to work hard, be honest, and have integrity. He later moved to Utah where he lives now with his beautiful wife and six children. Thor has worked in the agricultural business for 20 years. He started out working for dealerships before deciding to start Mountain View Wholesale in 2015. Since then he has been committed to giving his customers the best experience possible. Better price, better value, a “better way to buy.”
+          Thor grew up on a farm in Fallon, Nevada. He’s the oldest of ten children. Growing up, he learned to work hard, be honest, and have integrity. He later moved to Utah where he lives now with his beautiful wife and six children. Thor has worked in the agricultural business for 20 years. He started out working for dealerships before deciding to start Mountain View Wholesale in 2015. Since then he has been committed to giving his customers the best experience possible - a better price, a better value, <i>a “better way to buy.”</i>
         </div>
       </div>
     </div>

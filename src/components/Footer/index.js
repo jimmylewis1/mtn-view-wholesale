@@ -5,7 +5,7 @@ import { textBold } from '../../styles/generic.styles';
 
 const Footer = () => (
   <div className={footerWrapper}>
-    <div className={contactPhone}>801-380-6636</div>
+    <div className={contactPhone}>© Mountain View Wholesale</div>
     <div className={contactAddress}>
       <span className={textBold}>Mountain View Wholesale</span><br />
       PO Box 415<br />
