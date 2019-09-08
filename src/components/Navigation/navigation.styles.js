@@ -10,22 +10,42 @@ export const header = css`
   label: header;
   `;
 
-export const navBar = css`
+export const navWrapper = css`
+  height: 100px;
   background-color: rgb(167, 167, 167, 60);
   border-bottom: 1px solid ${lightGrey};
   border-radius: 0px;
-  label: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  label: nav-wrapper;
+`;
+
+export const navBrand = css`
+
+  label: nav-brand;
+`;
+
+export const navMenu = css`
+  font-size: 15px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  label: nav-menu;
+
+  a {
+    color: ${darkGrey}; 
+    margin: 0 10px;
+
+    &:active {
+      font-weight: bold;
+    }
+}
 `;
 
 export const navItem = css`
-  a {
-    color: ${darkGrey} !important; 
- 
-    &:focus {
-          color: ${blue};
-          font-weight: bold;
-    }
-  }
+  margin: 0 5px;
+
   label: nav-item;
 `;
 
