@@ -40,7 +40,6 @@ export const companySlogan = css`
 
 export const middleWrapper = css`
   display: flex;
-  flex-wrap: wrap;
   margin: 5em;
   label: middle-wrapper;
 `;
@@ -49,6 +48,7 @@ export const middleTextWrapper = css`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 3em;
   max-width: 690px;
   label: middle-text-wrapper;
@@ -65,3 +65,7 @@ export const bottomWrapper = css`
   margin: 5em;
   label: bottom-wrapper;
 `;
+
+// Begin media queries
+
+css`@media screen and(max-width: 875px) {}`

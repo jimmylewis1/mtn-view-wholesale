@@ -7,6 +7,14 @@ export const storyWrapper = css`
   label: story-wrapper;
 `;
 
+export const aboutWrapper = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  label: about-wrapper;
+`;
+
 export const aboutStory = css`
   font-size: 18px;
   margin: 3em;

@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { pageTitle } from '../../styles/generic.styles';
-import { storyWrapper, aboutStory, ownershipWrapper, ownerBio } from './about.styles';
+import { pageTitle, actionButton } from '../../styles/generic.styles';
+import { storyWrapper, aboutStory, ownershipWrapper, ownerBio, aboutWrapper } from './about.styles';
 
 import storyImage from '../../images/temp-image6.jpg';
 import familyImage from '../../images/temp-image7.jpg';
@@ -13,8 +14,13 @@ const AboutPage = () => (
     </div>
     <div className={storyWrapper}>
       <img src={storyImage} alt="" />
-      <div className={aboutStory}>
-        Mountain View Wholesale started in 2015 to provide an option for hard-working farmers and ranchers to have a reliable source for purchasing used equipment. When working with MVW, you can feel confident in knowing that no matter what your needs are—whether it’s buying, selling, or trade-ins, you will be treated fairly and with respect.
+      <div className={aboutWrapper}>
+        <div className={aboutStory}>
+          Mountain View Wholesale started in 2015 to provide an option for hard-working farmers and ranchers to have a reliable source for purchasing used equipment. When working with MVW, you can feel confident in knowing that no matter what your needs are—whether it’s buying, selling, or trade-ins, you will be treated fairly and with respect.
+        </div>
+        <Link to={{ pathname: '/product-list' }}>
+          <div className={actionButton}>Browse Our Listings</div>
+        </Link>
       </div>
     </div>
     <div className={ownershipWrapper}>
