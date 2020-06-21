@@ -3,8 +3,11 @@ import { white } from '../../styles/colors';
 
 import TractorHero from '../../images/tractor-hero.jpg';
 
+const mainBackgroundImgUrl = 'https://i.imgur.com/rkhVwAh.jpg';
+const anotherBackgroundImgUrl = 'https://i.imgur.com/YjGwanS.jpg';
+
 export const homeHero = css`
-  background-image: url('${TractorHero}');
+  background-image: url('${anotherBackgroundImgUrl}');
   background-repeat: no-repeat;
   background-size: 100%;
   height: 960px;
@@ -19,6 +22,7 @@ export const nameSloganWrapper = css`
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 25em;
   label: name-slogan-wrapper;
 `;
 
@@ -26,6 +30,7 @@ export const companyName = css`
   color: ${white};
   font-size: 8em;
   font-weight: bold;
+  text-shadow: 5px 3px 3px #000;
   display: flex;
   justify-content: center;
   label: company-name;
@@ -35,6 +40,7 @@ export const companySlogan = css`
   color: ${white};
   font-size: 2em;
   font-style: italic;
+  text-shadow: 5px 3px 3px #000;
   label: company-slogan;
 `;
 
