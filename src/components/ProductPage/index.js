@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import arrowImg from '../../images/arrow.svg';
-import ModalComponent from '../Modal';
+import { ModalComponent } from '../Modal';
 
 import { productWrapper, backWrapper, backBtn, 
   arrowSvg, imageCarouselWrapper, productInfoWrapper,
@@ -15,7 +15,7 @@ import { wrapper } from '../../styles/generic.styles';
 
 import productsList from '../../productsList';
 
-const ProductPage = (props) => {
+export const ProductPage = (props) => {
   const productId = props.match.params.id;
   const productData = _.find(productsList, { 'id': productId});
   const product = productData;
@@ -64,6 +64,4 @@ const ProductPage = (props) => {
       </div>
     </div>
   )
-}
-
-export default ProductPage;
+};

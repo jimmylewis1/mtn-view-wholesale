@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Navigation from '../Navigation';
-import HomePage from '../Home';
-import AboutPage from '../About';
-import ContactPage from '../Contact';
-import ProductListPage from '../ProductListPage';
-import ProductPage from '../ProductPage';
-import Footer from '../Footer';
+import { Navigation } from '../Navigation';
+import { HomePage } from '../Home';
+import { AboutPage } from '../About';
+import { ContactPage } from '../Contact';
+import { ProductListPage } from '../ProductListPage';
+import { ProductPage } from '../ProductPage';
+import { Footer } from '../Footer';
 
 import { mainWrapper } from './app.styles';
 

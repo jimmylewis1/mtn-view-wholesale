@@ -12,39 +12,39 @@ import bottomImage1 from '../../images/temp-image3.jpg';
 import bottomImage2 from '../../images/temp-image4.jpg';
 import bottomImage3 from '../../images/temp-image5.jpg';
 
-const HomePage = () => (
-  <div>
-    <div className={homeHero}>
-      <div className={nameSloganWrapper} >
-        <div className={companyName}>Mountain View <br /> Wholesale</div>
-        <div className={companySlogan}>The better way to buy!</div>
-      </div>
-    </div>
-    <div className={middleWrapper}>
-      <img src={middleImage} alt="" />
-      <div className={middleTextWrapper}>
-        <div className={middleText}>
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
-          Text goes here.Text goes here.Text goes here.Text goes here.
+export const HomePage = () => {
+  return(
+    <div>
+      <div className={homeHero}>
+        <div className={nameSloganWrapper} >
+          <div className={companyName}>Mountain View <br /> Wholesale</div>
+          <div className={companySlogan}>The better way to buy!</div>
         </div>
-        <Link to={{ pathname: '/product-list'}}>
-          <div className={actionButton}>Browse Our Listings</div>
-        </Link>
+      </div>
+      <div className={middleWrapper}>
+        <img src={middleImage} alt="" />
+        <div className={middleTextWrapper}>
+          <div className={middleText}>
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+            Text goes here.Text goes here.Text goes here.Text goes here.
+          </div>
+          <Link to={{ pathname: '/product-list'}}>
+            <div className={actionButton}>Browse Our Listings</div>
+          </Link>
+        </div>
+      </div>
+      <div className={bottomWrapper}>
+      <img src={bottomImage1} alt="" />
+      <img src={bottomImage2} alt="" />
+      <img src={bottomImage3} alt="" />
       </div>
     </div>
-    <div className={bottomWrapper}>
-    <img src={bottomImage1} alt="" />
-    <img src={bottomImage2} alt="" />
-    <img src={bottomImage3} alt="" />
-    </div>
-  </div>
-);
-
-export default HomePage;
+  )
+};
