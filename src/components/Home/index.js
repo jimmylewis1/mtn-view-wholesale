@@ -16,6 +16,7 @@ export const HomePage = () => {
   return(
     <div>
       <div className={homeHero}>
+        <img src="https://i.imgur.com/9Qo5xot.jpg" alt="" />
         <div className={nameSloganWrapper} >
           <div className={companyName}>Mountain View <br /> Wholesale</div>
           <div className={companySlogan}>The better way to buy!</div>

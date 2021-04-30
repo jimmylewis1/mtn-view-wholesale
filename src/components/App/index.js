@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Navigation } from '../Navigation';
+import { MobileHeader } from '../mobile-header/mobile-header.component';
 import { HomePage } from '../Home';
 import { AboutPage } from '../About';
 import { ContactPage } from '../Contact';
@@ -11,21 +12,44 @@ import { Footer } from '../Footer';
 
 import { mainWrapper } from './app.styles';
 
-const App = () => (
-  <Router>
-    <div className={mainWrapper}>
-      <Navigation />
+function App() {
+  const [windowWidth, setWindowWidth] = useState(0);
 
-      <Route exact path={'/'} component={HomePage} />
-      <Route exact path={'/about'} component={AboutPage} />
-      <Route exact path={'/product-list'} component={ProductListPage} />
-      <Route exact path={'/contact'} component={ContactPage} />
-      <Route exact path={'/product/:id'} component={ProductPage} />
+  const styles = {
+    showMobileHeader: windowWidth < 768,
+  }
 
-      <Footer />
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions())
+  });
 
-    </div>
-  </Router>
-);
+  const updateDimensions = () => {
+    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+
+    setWindowWidth(windowWidth);
+  };
+
+  return(
+    <Router>
+      <div className={mainWrapper}>
+      {styles.showMobileHeader ? (
+          <MobileHeader />
+        ): (
+          <Navigation />
+        )}
+
+        <Route exact path={'/'} component={HomePage} />
+        <Route exact path={'/about'} component={AboutPage} />
+        <Route exact path={'/product-list'} component={ProductListPage} />
+        <Route exact path={'/contact'} component={ContactPage} />
+        <Route exact path={'/product/:id'} component={ProductPage} />
+
+        <Footer />
+
+      </div>
+    </Router>
+  )
+};
 
 export default App;

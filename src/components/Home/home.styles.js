@@ -3,17 +3,16 @@ import { white } from '../../styles/colors';
 
 import TractorHero from '../../images/tractor-hero.jpg';
 
-const mainBackgroundImgUrl = 'https://i.imgur.com/rkhVwAh.jpg';
-const anotherBackgroundImgUrl = 'https://i.imgur.com/YjGwanS.jpg';
+const mainBackgroundImgUrl = 'https://i.imgur.com/9Qo5xot.jpg';
 
 export const homeHero = css`
-  background-image: url('${anotherBackgroundImgUrl}');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 960px;
   display: flex;
   justify-content: center;
   label: home-hero;
+
+  img{
+    width: 100%;
+  }
 `;
 
 export const nameSloganWrapper = css`

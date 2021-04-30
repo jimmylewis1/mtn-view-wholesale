@@ -22,7 +22,7 @@ const productsList = [{
     "products/caseih7140/image15.jpg",
     "products/caseih7140/image16.jpg",
     "products/caseih7140/image17.jpg"
-  ]
+  ],
 },
 {
   "id": "002",
